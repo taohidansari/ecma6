@@ -1,0 +1,31 @@
+
+<script>
+  
+/// let has block scope and function scope, it belongs only to defined functions and blocks
+
+ let name = "Taohid Ansari";
+
+ console.log(name);
+
+function abc(){
+    let t = "ok";
+    console.log(name);
+}
+abc();
+
+
+// can access t here
+//console.log(t);
+
+
+
+if( 4 > 2 ){
+    /// y can't be access outside of block
+   let y = 89;
+   console.log(y);
+}
+
+
+//console.log(y);
+
+</script>

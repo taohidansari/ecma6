@@ -1,0 +1,35 @@
+
+
+
+<script type="text/javascript">
+	
+/// destructuring object 
+/// 
+ const person = {
+ 	name : "Taohid",
+ 	address : "Ambikapur",
+ 	age : 26,
+ 	city : "Hyderabad"
+ }
+
+
+ function test(person1){
+      console.log("name is "+person.name);
+      console.log("address is "+person.address);
+      console.log("age is "+person.age);
+      console.log("city is "+person.city);
+ }
+
+ test(person);
+
+ // new way 
+ function nw({ age,name }){
+ 	 console.log("new way");
+   console.log(age);
+    console.log(name);
+ }
+ nw(person);
+
+
+
+</script>

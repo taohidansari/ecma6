@@ -1,0 +1,53 @@
+
+
+<script>
+/// var has only function scope
+// i.e. if we use var inside the function, it belongs to that function only
+// if we use var inside the block, we can still use the var outside of that block
+
+
+
+// it will have global scope
+// we can access name from function and blocks 
+var name  = "Taohid ansari";
+
+console.log("outside function and block" + name);
+
+function abc(){
+       
+   console.log("inside the function"+ name);
+
+}
+
+if( 5 > 1 ){
+    console.log("inside the block"+name);
+}
+
+abc();
+
+
+/////
+/// var inside function belongs to only that function
+function hi(){
+   var hi_ = "hi world";
+   console.log(hi_);
+}
+hi();
+
+/// it will throw error, hi is not defined
+//console.log(hi_);
+
+
+
+if( 100 > 45 ){
+    // we can access t outside also
+    var t = 56;
+}
+console.log(t);
+
+ function hello(){
+    console.log("inside function t "+t);
+ }
+ hello();
+
+</script>

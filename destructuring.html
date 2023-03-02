@@ -1,0 +1,40 @@
+
+
+<script>
+
+const vehicles = ['creta','honda','ranger'];
+const car = vehicles[0];
+const bike = vehicles[1];
+const cycle = vehicles[2];
+
+/// old way of assigning array items to variables
+  console.log(car);
+  console.log(bike);
+  console.log(cycle);
+
+////   new way
+const [car1, bike1 ,cycle1] = vehicles;
+console.log(car1);
+  console.log(bike1);
+  console.log(cycle1);
+
+  // we can skipp just by comm (,)  when we don't need smthing 
+  const [car2,  ,cycle2] = vehicles;
+  console.log(car2);
+  console.log(cycle2);
+
+
+//// destructuring comes in handy if the function retyrn array
+function op(n1,n2){
+    const add = n1 + n2;
+    const sub = n1 - n2;
+    const mul = n1 * n2;
+    const div = n1/n2;
+    return [add,sub,mul,div];
+}
+const [add,,,div] = op(10,2);
+console.log(add);
+console.log(div);
+
+
+</script>
